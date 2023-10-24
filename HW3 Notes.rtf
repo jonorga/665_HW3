@@ -22,21 +22,21 @@ Design pattern:\
 Customer class:\
 	- Attributes: HAS-A CreateEmailBehavior object\
 	- Methods: GetEmail()\
-CreateEmailBehavior class:\
+CreateEmailBehavior interface:\
 	- Methods: (abstract) CreateEmail()\
 BusinessEmail class:\
-	- Inherits from: CreateEmailBehavior class\
+	- Implements from: CreateEmailBehavior interface\
 	- Methods: (overrides) CreateEmail()\
 ReturningEmail class:\
-	- Inherits from: CreateEmailBehavior class\
+	- Implements from: CreateEmailBehavior interface\
 	- Methods: (overrides) CreateEmail()\
 FrequentEmail class:\
-	- Inherits from: CreateEmailBehavior class\
+	- Implements from: CreateEmailBehavior interface\
 	- Methods: (overrides) CreateEmail()\
 NewEmail class:\
-	- Inherits from: CreateEmailBehavior class\
+	- Implements from: CreateEmailBehavior interface\
 	- Methods: (overrides) CreateEmail()\
 VIPEmail class:\
-	- Inherits from: CreateEmailBehavior class\
+	- Implements from: CreateEmailBehavior interface\
 	- Methods: (overrides) CreateEmail()\
 }

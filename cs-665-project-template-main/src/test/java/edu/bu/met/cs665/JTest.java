@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 */
-import vending_machine.Customer;
+import email_generator.*;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,11 +14,14 @@ import org.junit.Test;
 public class JTest {
 
 	@Test
-	public void TestCoffee() {
-		Customer testCase = new Customer("Americano", 2, 2);
-		assertEquals(4.0, testCase.PlaceOrder(), 0);
+	public void TestBusinessCustomer() {
+		Customer testCase = new Customer();
+		testCase.SetCustomerType(new BusinessEmail());
+		assertEquals("To whom it may concern, we are reaching out regarding this business email.", 
+			testCase.GetEmail());
 	}
 
+	/*
 	@Test
 	public void TestTea() {
 		Customer testCase = new Customer("Green Tea", 2, 0);
@@ -42,4 +45,5 @@ public class JTest {
 		Customer testCase = new Customer("Gatorade", 0, 0);
 		assertEquals(0, testCase.PlaceOrder(), 0);
 	}
+	*/
 }

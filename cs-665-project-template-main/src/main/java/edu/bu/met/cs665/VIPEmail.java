@@ -9,19 +9,13 @@
  
 package email_generator;
 
-public class Customer {
-    CreateEmailBehavior createEmailBehavior;
-
-    /**
-     * This method gets the email from the create email behavior
-     */
-    public void SetCustomerType(CreateEmailBehavior createEmailBehavior) {
-        this.createEmailBehavior = createEmailBehavior;
-    }
-
+public class VIPEmail implements CreateEmailBehavior {
+    
     /**
      * This method gets the email from the create email behavior
      * @return String
      */
-    public String GetEmail() { return createEmailBehavior.CreateEmail(); }
+    public String CreateEmail() {
+        return "To our most valued customer, we are reaching out to let you know we value your business.";
+    }
 }
