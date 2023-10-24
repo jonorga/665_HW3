@@ -2,9 +2,9 @@
  * Name: Jon Organ
  * Course: CS-665 Software Designs & Patterns
  * Date: 10/23/2023
- * File Name: Customer.java
- * Description: This file contains the Customer class, it contains a CreateEmailBehavior object and a method to 
- * return the email that was generated
+ * File Name: NewEmail.java
+ * Description: This file contains the NewEmail class, it contains the create email method to generate
+ * an email for a new customer
  */
  
 package email_generator;
@@ -12,7 +12,7 @@ package email_generator;
 public class NewEmail implements CreateEmailBehavior {
     
     /**
-     * This method gets the email from the create email behavior
+     * This method creates the email to return to the customer class
      * @return String
      */
     public String CreateEmail() {
